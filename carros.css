@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto clara */
+    display: flex;
+    margin: 0;
+    height: 100vh; /* Altura total da tela */
+}
+
+.sidebar {
+    background-color: #1e1e1e; /* Cor de fundo da barra lateral */
+    width: 10%; /* Largura da barra lateral */
+    max-width: 50px;
+    height: 100vh; /* Altura da barra lateral igual à altura da tela */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixa a barra lateral na tela */
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    color: #6200ea; /* Cor do link ao passar o mouse */
+}
+
+.content {
+    margin: auto;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+.car-card {
+    background-color: #1e1e1e; /* Cor de fundo do cartão do carro */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0; /* Margem entre os cartões */
+    width: 100%; /* Largura total do cartão */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.car-card h3 {
+    margin: 0;
+}
+
+.car-card p {
+    margin: 5px 0;
+}
+
+.add-car-button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.add-car-button:hover {
+    background-color: #3700b3;
+}
+
+.edit-car-button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    margin-left: 37%;
+}
+
+.edit-car-button:hover {
+    background-color: #3700b3;
+}
+
+/* Estilo do modal (pop-up) já incluído anteriormente */
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Largura do modal */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h2 {
+    color: #ffffff; /* Cor do título do modal */
+}
+
+.modal label {
+    color: #ffffff; /* Cor dos rótulos */
+}
+
+.modal input {
+    width: 75%; /* Largura total dos campos de entrada */
+    padding: 10px;
+    margin: 10px 0; /* Margem entre os campos */
+    border: none;
+    border-radius: 4px;
+}
+
+.modal button[type="submit"] {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button[type="submit"]:hover {
+    background-color: #3700b3;
+}

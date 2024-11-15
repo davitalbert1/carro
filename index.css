@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto clara */
+    display: flex;
+    margin: 0;
+    height: 100vh; /* Altura total da tela */
+}
+
+.sidebar {
+    background-color: #1e1e1e; /* Cor de fundo da barra lateral */
+    width: 10%; /* Largura da barra lateral */
+    max-width: 50px;
+    height: 100vh; /* Altura da barra lateral igual à altura da tela */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Fixa a barra lateral na tela */
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #ffffff; /* Cor dos links */
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    color: #6200ea; /* Cor do link ao passar o mouse */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: calc(center);
+}
+
+.car-card {
+    background-color: #1e1e1e; /* Cor de fundo do cartão do carro */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 300%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.car-card h3 {
+    margin: 0;
+}
+
+.car-card p {
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #6200ea; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Largura total do botão */
+}
+
+button:hover {
+    background-color: #3700b3; /* Cor do botão ao passar o mouse */
+}
+
+.titulo {
+    font-size: 1.5em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
