@@ -1,21 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Cor de fundo escura */
-    color: #ffffff; /* Cor do texto clara */
+    background-color: #121212;
+    color: #ffffff;
     display: flex;
     margin: 0;
-    height: 100vh; /* Altura total da tela */
+    height: 100vh;
 }
 
 .sidebar {
-    background-color: #1e1e1e; /* Cor de fundo da barra lateral */
-    width: 10%; /* Largura da barra lateral */
+    background-color: #1e1e1e;
+    width: 10%;
     max-width: 50px;
-    height: 100vh; /* Altura da barra lateral igual à altura da tela */
+    height: 100vh;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: fixed; /* Fixa a barra lateral na tela */
+    position: fixed;
     left: 0;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sidebar h2 {
@@ -23,25 +25,25 @@ body {
 }
 
 .sidebar a {
-    color: #ffffff; /* Cor dos links */
+    color: #ffffff;
     text-decoration: none;
     display: block;
     margin: 10px 0;
 }
 
 .sidebar a:hover {
-    color: #6200ea; /* Cor do link ao passar o mouse */
+    color: #73559b;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     margin: auto;
-    align-items: calc(center);
+    align-items: center;
 }
 
 .car-card {
-    background-color: #1e1e1e; /* Cor de fundo do cartão do carro */
+    background-color: #1e1e1e;
     border-radius: 5px;
     padding: 15px;
     margin: 10px;
@@ -59,23 +61,23 @@ body {
 
 button {
     padding: 10px;
-    background-color: #6200ea; /* Cor do botão */
+    background-color: #6200ea;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%; /* Largura total do botão */
+    width: 100%;
 }
 
 button:hover {
-    background-color: #3700b3; /* Cor do botão ao passar o mouse */
+    background-color: #3700b3;
 }
 
 .titulo {
-    font-size: 1.5em; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
-    margin-bottom: 10px; /* Espaço abaixo do título */
-    text-align: center; /* Centraliza o texto */
-    font-weight: bold; /* Negrito */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-size: 1.5em;
+    color: #585858;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }

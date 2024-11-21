@@ -9,9 +9,11 @@
 <body>
     <div class="sidebar">
         <a href="index.html">Início</a>
+        <br>
         <a href="carros.html">Carros</a>
-        <a href="add.html">Carros</a>
+        <br>
         <a href="config.html">Conta</a>
+        <br>
         <a href="admin.html">Admin</a>
     </div>
 
@@ -50,7 +52,6 @@
         </div>
     </div>
 
-    <!-- Pop-up para adicionar novo carro -->
     <div id="carModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeCarModal()">&times;</span>
@@ -58,11 +59,13 @@
             <form>
                 <label for="carModel">Modelo:</label>
                 <input type="text" id="carModel" name="carModel" required>
-                
+                <br>
                 <label for="carYear">Ano:</label>
+                <br>
                 <input type="number" id="carYear" name="carYear" required>
-                
+                <br>
                 <label for="carPrice">Preço:</label>
+                <br>
                 <input type="text" id="carPrice" name="carPrice" required>
                 
                 <button type="submit">Adicionar</button>
@@ -70,7 +73,6 @@
         </div>
     </div>
 
-    <!-- Pop-up para editar carro -->
     <div id="editCarModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeEditCarModal()">&times;</span>

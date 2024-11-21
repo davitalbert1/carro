@@ -1,21 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Cor de fundo escura */
-    color: #ffffff; /* Cor do texto clara */
+    background-color: #121212;
+    color: #ffffff;
     display: flex;
     margin: 0;
-    height: 100vh; /* Altura total da tela */
+    height: 100vh;
 }
 
 .sidebar {
-    background-color: #1e1e1e; /* Cor de fundo da barra lateral */
-    width: 10%; /* Largura da barra lateral */
+    background-color: #1e1e1e;
+    width: 10%;
     max-width: 50px;
-    height: 100vh; /* Altura da barra lateral igual à altura da tela */
+    height: 100vh;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: fixed; /* Fixa a barra lateral na tela */
+    position: fixed;
     left: 0;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sidebar h2 {
@@ -23,38 +25,37 @@ body {
 }
 
 .sidebar a {
-    color: #ffffff; /* Cor dos links */
+    color: #ffffff;
     text-decoration: none;
     display: block;
     margin: 10px 0;
 }
 
 .sidebar a:hover {
-    color: #6200ea; /* Cor do link ao passar o mouse */
+    color: #73559b;
 }
 
 .content {
     margin: auto;
-    margin-left: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .titulo {
-    font-size: 1.5em; /* Tamanho da fonte */
-    color: #ffffff; /* Cor do texto */
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    text-align: center; /* Centraliza o texto */
-    font-weight: bold; /* Negrito */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .car-card {
-    background-color: #1e1e1e; /* Cor de fundo do cartão do carro */
+    background-color: #1e1e1e;
     border-radius: 5px;
     padding: 15px;
-    margin: 10px 0; /* Margem entre os cartões */
-    width: 100%; /* Largura total do cartão */
+    margin: 10px 0;
+    width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -74,7 +75,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     margin: auto;
-    margin-left: 25%;
+    margin-left: 23%;
 }
 
 .add-car-button:hover {
@@ -96,9 +97,8 @@ body {
     background-color: #3700b3;
 }
 
-/* Estilo do modal (pop-up) já incluído anteriormente */
 .modal {
-    display: none; /* Esconde o modal por padrão */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -106,7 +106,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -114,7 +114,7 @@ body {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 300px; /* Largura do modal */
+    width: 300px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -134,17 +134,17 @@ body {
 }
 
 .modal h2 {
-    color: #ffffff; /* Cor do título do modal */
+    color: #ffffff;
 }
 
 .modal label {
-    color: #ffffff; /* Cor dos rótulos */
+    color: #ffffff;
 }
 
 .modal input {
-    width: 75%; /* Largura total dos campos de entrada */
+    width: 75%;
     padding: 10px;
-    margin: 10px 0; /* Margem entre os campos */
+    margin: 10px 0;
     border: none;
     border-radius: 4px;
 }
@@ -160,4 +160,31 @@ body {
 
 .modal button[type="submit"]:hover {
     background-color: #3700b3;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6200ea;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3700b3;
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin: auto;
+        margin-left: 21%;
+        display: flex;
+        flex-direction: column;
+    }
 }
